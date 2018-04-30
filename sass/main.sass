@@ -1,0 +1,68 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/superfish/dist/css/superfish"
+
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+//Custom Styles Here
+
+
+.sect-best-manufacturer
+  text-align: center
+  .heading
+    text-align: center
+    font-family: "NunitoSansExtraBold", sans-serif
+    font-size: 27px
+    margin-bottom: 20px
+    .heading__text
+      overflow: hidden
+    .heading__text:before, .heading__text:after
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      box-sizing: border-box
+      width: 100%
+      height: 1px
+      background: #cdcdcd
+      border: solid #FFF
+      border-width: 0 10px
+    .heading__text:before
+      margin-left: -100%
+    .heading__text:after
+      margin-right: -100%
+  .first-block
+    .first-block__img
+      width: 350px
+      height: auto
+
+
+//ALWAYS END
+@import "media"
+
+
