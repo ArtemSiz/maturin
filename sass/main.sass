@@ -39,12 +39,12 @@ body textarea:required:valid
 .sect-best-manufacturer
   text-align: left
   padding-bottom: 115px
-  border-bottom: 1px solid #cdcdcd
   .heading
+    width: 80%
     text-align: center
     font-family: "NunitoSansExtraBold", sans-serif
     font-size: 27px
-    margin-bottom: 20px
+    margin: 40px auto
     .heading__text
       overflow: hidden
     .heading__text:before, .heading__text:after
@@ -61,45 +61,53 @@ body textarea:required:valid
       margin-left: -100%
     .heading__text:after
       margin-right: -100%
-  .first-block
-    .container
-      padding: 0
-      .first-block__img
-        width: 433px
-        height: auto
-      .about-manufacturer
-        color: #888888
-        text-align: left
-        height: 273px
-        .manufacturer-name
-          color: #000
-          font-weight: bold
-        .about-manufacturer__p
-          font-size: 13px
-          margin-bottom: 0
-        .about-manufacturer__a
-          position: absolute
-          bottom: 0
+  .container
+    padding-left: 5%
+    padding-right: 5%
+    .first-block
+      .container
+        padding: 0
+        width: 100%
+        .first-block__img
+          width: 433px
+          height: auto
+        .about-manufacturer
+          color: #888888
+          text-align: left
+          height: 273px
+          .manufacturer-name
+            color: #000
+            font-weight: bold
+          .about-manufacturer__p
+            font-size: 13px
+            margin-bottom: 0
+          .about-manufacturer__a
+            position: absolute
+            bottom: 0
 
 
 .sect-about-site-company
   font-size: 15px
-  padding-top: 80px
-  .heading
-    height: 90px
-    .heading__text
-      padding-right: 33%
-      font-family: "NunitoSansLight", sans-serif
-      font-size: 30px
-  .sect-about-site-company__p
-    height: 90px
-  .sect-about-site-company__span
-    font-family: "NunitoSansBold", sans-serif
-    font-size: 16px
-    color: $accent-color
-    cursor: pointer
-    &:hover
-      color: $darken-accent-color
+  .container
+    padding-top: 80px
+    padding-left: 5%
+    padding-right: 5%
+    border-top: 1px solid #cdcdcd
+    .heading
+      height: 90px
+      .heading__text
+        padding-right: 33%
+        font-family: "NunitoSansLight", sans-serif
+        font-size: 24px
+    .sect-about-site-company__p
+      height: 90px
+    .sect-about-site-company__span
+      font-family: "NunitoSansBold", sans-serif
+      font-size: 16px
+      color: $accent-color
+      cursor: pointer
+      &:hover
+        color: $darken-accent-color
 
 
 .sect-reviews
@@ -109,14 +117,15 @@ body textarea:required:valid
     margin: 0
     padding: 0
     height: 660px
-    >div
+    .col-lg-6
       padding-left: 0
       padding-right: 0
     .heading
       text-align: center
       font-family: "NunitoSansExtraBold", sans-serif
       font-size: 27px
-      margin-bottom: 20px
+      width: 80%
+      margin: 40px auto
       .heading__text
         overflow: hidden
       .heading__text:before, .heading__text:after
@@ -136,10 +145,28 @@ body textarea:required:valid
     .left-block
       height: 530px
       background-color: #f0f0f0
+      .left-block__img-brand
+        position: absolute
+        top: 30%
+        left: 37%
+      .left-block__img-bottle
+        position: absolute
+        left: 60%
+        top: 4%
     .right-block
       height: 530px
+      padding-top: 7%
+      padding-left: 7%
       background-color: #000000
-
+      color: #ffffff
+      .wine-name
+        font-family: "NunitoSansBold", sans-serif
+        font-size: 18px
+      .right-block__text
+        font-family: "NunitoSansItalic", sans-serif
+        font-size: 15px
+    .button
+      margin-top: 55px
 
 .sect-what-this .container, .sect-subscription .container
   width: 80%
@@ -147,7 +174,7 @@ body textarea:required:valid
   padding-right: 20%
 
 .sect-what-this
-  margin-bottom: 110px
+  margin: 110px 0
   text-align: center
   .container
     .heading
@@ -168,8 +195,12 @@ body textarea:required:valid
           color: $darken-accent-color
 
 .sect-subscription
+  position: relative
   text-align: center
+  height: 415px
   .container
+    position: relative
+    height: 100%
     border-top: 1px solid #cdcdcd
     padding-top: 90px
     .heading
@@ -182,11 +213,88 @@ body textarea:required:valid
         font-family: "NunitoSansLight", sans-serif
         font-size: 15px
         color: #cdcdcd
+      .first-button, .second-button
+        margin: 17px auto
+        width: 340px
+      .first-button
+        background-color: #e0dfde
+        color: #000
+      .first-button:hover
+        background-color: #b1b1b1
+  .messenger
+    position: absolute
+    bottom: 27px
+    right: 27px
 
 
 
+.footer
+  .col-lg-2
+    width: 20%
+    padding: 0
+
+.footer
+  height: 430px
+  font-size: 13px
+  color: #cdcdcd
+  .container
+    position: relative
+    padding: 0
+  .top-line
+    padding-top: 30px
+    border-top: 1px solid #cdcdcd
+    .row
+      margin: 0
+    .social-network
+      i
+        margin-right: 15px
+        cursor: pointer
+        color: #a5a5a4
+    .first-item
+      font-family: "NunitoSansSemiBold", sans-serif
+      color: #000
+    .item
+      font-family: "NunitoSansLight", sans-serif
+      cursor: pointer
+    .item:hover
+      text-decoration: underline
+    .col-lg-2:last-child
+      position: relative
+      .change-lang
+        position: absolute
+        right: 0
+        text-align: center
+        line-height: 40px
+        width: 190px
+        height: 40px
+        border: 1px solid #cdcdcd
+        .change-lang__span
+          padding: 0
+          text-transform: uppercase
+          color: #000
+          cursor: pointer
+        .change-lang__span:hover
+          text-decoration: underline
+        i
+          color: #999999
+          margin-left: 5px
+  .under-top-line
+    text-align: center
+    margin-top: 40px
+    .under-top-line__item
+      display: inline-block
+      margin-right: 50px
+  .copyright
+    position: absolute
+    right: 0
+    bottom: 0
 
 @media screen and (min-width: 1800px)
+
+  .sect-best-manufacturer .container, .sect-about-site-company .container
+    padding-left: 8%
+    padding-right: 8%
+
   .sect-best-manufacturer
     .container
       .first-block
@@ -196,10 +304,20 @@ body textarea:required:valid
           .about-manufacturer__a
             margin-top: 10px
 
+
+  .sect-about-site-company
+    .container
+      .heading
+        .heading__text
+          font-size: 30px
+
   .sect-subscription
     .heading
       .heading__text
         font-size: 30px
+
+  .footer
+    font-size: 15px
 
 //ALWAYS END
 @import "media"

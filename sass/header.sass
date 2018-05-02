@@ -19,6 +19,11 @@ h1, h2, h3, h4, h5, h6, button
   text-transform: uppercase
 
 
+ul, li
+  list-style-type: none
+  padding: 0
+  margin: 0
+
 a.button
   display: block
   color: #fff
@@ -33,7 +38,8 @@ a.button:hover
   color: #fff
   background-color: $darken-accent-color
 
-
+.container
+  width: 80%
 
 .header
   .top-line
@@ -41,10 +47,6 @@ a.button:hover
     background-color: #000
     font-family: NunitoSansLight, sans-serif
     font-size: 13px
-    ul, li
-      list-style-type: none
-      padding: 0
-      margin: 0
     ul
       float: right
     li
@@ -53,11 +55,15 @@ a.button:hover
       a
         color: #ffffff
         line-height: 40px
+        i
+          font-size: 15px
+          margin-left: 3px
 
   .menu-wrapper
     width: 1350px
     margin-right: 13px
     padding-right: 10px
+    margin-bottom: 10px
 
   .container
     .under-top-line
@@ -108,6 +114,10 @@ a.button:hover
           font-size: 13px
           display: inline-block
           text-transform: uppercase
+        .sf-menu__item:first-child
+          text-decoration: underline
+        .sf-menu__item:first-child:hover
+          text-decoration: none
         .sf-menu__item:last-child
           a
             color: $accent-color
@@ -136,11 +146,11 @@ a.button:hover
     height: 100%
     padding: 0
     .slider-wrap
-      //height: 100%
       width: 100%
       position: relative
       float: left
-      //display: none
+      .container
+        width: 100%
       .slider-nav
         position: absolute
         width: 100%
@@ -161,15 +171,12 @@ a.button:hover
             top: 25%
             left: 35%
       .header-slider
-        //height: 100%
-        //position: relative
         top: 0
         width: 100%
         overflow-x: hidden
         .slide
           color: #ffffff
           position: relative
-          //padding: 200px 105px 155px 160px
           width: 100%
           height: 400px
           margin-left: 15px
@@ -217,6 +224,8 @@ a.button:hover
         text-decoration: underline
         font-size: 18px
         cursor: pointer
+        img
+          margin-left: 7px
   .about-image-right
     color: #fff
     position: relative
@@ -244,10 +253,12 @@ a.button:hover
       .about-image-right__span
         font-size: 18px
         cursor: pointer
+        img
+          margin-left: 7px
 
 
 .sect-advantages
-  margin-top: 35px
+  margin: 35px 0
   text-align: center
   .advantage-item
     div
@@ -308,11 +319,11 @@ a.button:hover
 
 .sect-products-categories
   background-color: #f2f1f1
+  padding: 50px 0
   .heading
     text-align: center
     font-family: "NunitoSansExtraBold", sans-serif
     font-size: 27px
-    margin-top: 40px
     margin-bottom: 20px
   .categories-slider__item
     .categories-slider__name
