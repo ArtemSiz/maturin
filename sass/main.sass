@@ -32,9 +32,14 @@ body textarea:required:valid
 
 //Custom Styles Here
 
+.sect-best-manufacturer .left-block, .sect-best-manufacturer .right-block,
+.sect-about-site-company .left-block, .sect-about-site-company .right-block
+  width: 90%
 
 .sect-best-manufacturer
-  text-align: center
+  text-align: left
+  padding-bottom: 115px
+  border-bottom: 1px solid #cdcdcd
   .heading
     text-align: center
     font-family: "NunitoSansExtraBold", sans-serif
@@ -57,10 +62,144 @@ body textarea:required:valid
     .heading__text:after
       margin-right: -100%
   .first-block
-    .first-block__img
-      width: 350px
-      height: auto
+    .container
+      padding: 0
+      .first-block__img
+        width: 433px
+        height: auto
+      .about-manufacturer
+        color: #888888
+        text-align: left
+        height: 273px
+        .manufacturer-name
+          color: #000
+          font-weight: bold
+        .about-manufacturer__p
+          font-size: 13px
+          margin-bottom: 0
+        .about-manufacturer__a
+          position: absolute
+          bottom: 0
 
+
+.sect-about-site-company
+  font-size: 15px
+  padding-top: 80px
+  .heading
+    height: 90px
+    .heading__text
+      padding-right: 33%
+      font-family: "NunitoSansLight", sans-serif
+      font-size: 30px
+  .sect-about-site-company__p
+    height: 90px
+  .sect-about-site-company__span
+    font-family: "NunitoSansBold", sans-serif
+    font-size: 16px
+    color: $accent-color
+    cursor: pointer
+    &:hover
+      color: $darken-accent-color
+
+
+.sect-reviews
+  margin-top: 100px
+  .container
+    width: 100%
+    margin: 0
+    padding: 0
+    height: 660px
+    >div
+      padding-left: 0
+      padding-right: 0
+    .heading
+      text-align: center
+      font-family: "NunitoSansExtraBold", sans-serif
+      font-size: 27px
+      margin-bottom: 20px
+      .heading__text
+        overflow: hidden
+      .heading__text:before, .heading__text:after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        box-sizing: border-box
+        width: 100%
+        height: 1px
+        background: #cdcdcd
+        border: solid #FFF
+        border-width: 0 10px
+      .heading__text:before
+        margin-left: -100%
+      .heading__text:after
+        margin-right: -100%
+    .left-block
+      height: 530px
+      background-color: #f0f0f0
+    .right-block
+      height: 530px
+      background-color: #000000
+
+
+.sect-what-this .container, .sect-subscription .container
+  width: 80%
+  padding-left: 20%
+  padding-right: 20%
+
+.sect-what-this
+  margin-bottom: 110px
+  text-align: center
+  .container
+    .heading
+      .heading__text
+        font-family: "NunitoSansSemiBold", sans-serif
+        font-size: 30px
+    .text
+      .text__p
+        font-family: "NunitoSansLight", sans-serif
+        font-size: 15px
+        color: #cdcdcd
+      .text__span
+        font-family: "NunitoSansBold", sans-serif
+        font-size: 16px
+        color: $accent-color
+        cursor: pointer
+        &:hover
+          color: $darken-accent-color
+
+.sect-subscription
+  text-align: center
+  .container
+    border-top: 1px solid #cdcdcd
+    padding-top: 90px
+    .heading
+      .heading__text
+        font-family: "NunitoSansLight", sans-serif
+        font-size: 26px
+        font-weight: normal
+    .text
+      .text__p
+        font-family: "NunitoSansLight", sans-serif
+        font-size: 15px
+        color: #cdcdcd
+
+
+
+
+@media screen and (min-width: 1800px)
+  .sect-best-manufacturer
+    .container
+      .first-block
+        .about-manufacturer
+          .about-manufacturer__p
+            font-size: 15px
+          .about-manufacturer__a
+            margin-top: 10px
+
+  .sect-subscription
+    .heading
+      .heading__text
+        font-size: 30px
 
 //ALWAYS END
 @import "media"
