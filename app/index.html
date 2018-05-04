@@ -78,7 +78,7 @@
 			</div>
 			<nav class="nav-menu">
 				<ul class="sf-menu">
-					<li class="sf-menu__item"><a href="#">À boire</a></li>
+					<li class="sf-menu__item open-submenu"><a href="#">À boire</a></li>
 					<li class="sf-menu__item"><a href="#">viande et poisson</a></li>
 					<li class="sf-menu__item"><a href="#">produits laitiers</a></li>
 					<li class="sf-menu__item"><a href="#">Boulangerie et pâtisserie</a></li>
@@ -94,50 +94,52 @@
           <div class="col-lg-2">
             <div class="type-drink">
               <ul>
-                <li><a href="#">TOUS LES PRODUITS À BOIRE</a></li>
-                <li><a href="#">Boissons alcoolisées<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                <li><a href="#">Boissons sans alcool</a></li>
-                <li><a href="#">Jus</a></li>
+                <li class="close-all-alcoholic-drinks"><a href="#">TOUS LES PRODUITS À BOIRE</a></li>
+                <li class="open-all-alcoholic-drinks"><a href="#">Boissons alcoolisées<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li class="close-all-alcoholic-drinks"><a href="#">Boissons sans alcool</a></li>
+                <li class="close-all-alcoholic-drinks"><a href="#">Jus</a></li>
               </ul>
               <a href="#" class="button">TOUS LES PRODUITS À BOIRE</a>
             </div>
           </div>
-          <div class="col-lg-2">
-            <div class="alcoholic-drinks">
-              <ul>
-                <li class="item-accent"><a href="#">Vin</a></li>
-                <li class="item"><a href="#">Vin blanc</a></li>
-                <li class="item"><a href="#">Vin rouge</a></li>
-                <li class="item"><a href="#">Vin rosé</a></li>
-                <li class="item-accent"><a href="#">Bière</a></li>
-                <li class="item"><a href="#">Bière blonde</a></li>
-                <li class="item"><a href="#">Bière blanche</a></li>
-                <li class="item"><a href="#">Bière rousse</a></li>
-                <li class="item"><a href="#">Bière IPA</a></li>
-              </ul>
-              <a href="#" class="button">Nouveautés</a>
+          <div class="all-alcoholic-drinks">
+            <div class="col-lg-2">
+              <div class="alcoholic-drinks">
+                <ul>
+                  <li class="item-accent"><a href="#">Vin</a></li>
+                  <li class="item"><a href="#">Vin blanc</a></li>
+                  <li class="item"><a href="#">Vin rouge</a></li>
+                  <li class="item"><a href="#">Vin rosé</a></li>
+                  <li class="item-accent"><a href="#">Bière</a></li>
+                  <li class="item"><a href="#">Bière blonde</a></li>
+                  <li class="item"><a href="#">Bière blanche</a></li>
+                  <li class="item"><a href="#">Bière rousse</a></li>
+                  <li class="item"><a href="#">Bière IPA</a></li>
+                </ul>
+                <a href="#" class="button">Nouveautés</a>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="alcoholic-drinks">
-              <ul>
-                <li class="item-accent"><a href="#">Cidre</a></li>
-                <li class="item"><a href="#">Cidre rosé</a></li>
-                <li class="item"><a href="#">Cidre blanc</a></li>
-                <li class="item-accent"><a href="#">Mousseaux</a></li>
-                <li class="item"><a href="#">Mousseau blanc</a></li>
-                <li class="item"><a href="#">Mousseau rosé</a></li>
-                <li class="item-accent"><a href="#">Spiritueux</a></li>
-              </ul>
-              <a href="#" class="button">soldes</a>
+            <div class="col-lg-2">
+              <div class="alcoholic-drinks">
+                <ul>
+                  <li class="item-accent"><a href="#">Cidre</a></li>
+                  <li class="item"><a href="#">Cidre rosé</a></li>
+                  <li class="item"><a href="#">Cidre blanc</a></li>
+                  <li class="item-accent"><a href="#">Mousseaux</a></li>
+                  <li class="item"><a href="#">Mousseau blanc</a></li>
+                  <li class="item"><a href="#">Mousseau rosé</a></li>
+                  <li class="item-accent"><a href="#">Spiritueux</a></li>
+                </ul>
+                <a href="#" class="button">soldes</a>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="category-image">
-              <img src="img/bottle-of-wine-2.jpg" alt="" class="category-image__img">
+            <div class="col-lg-2">
+              <div class="category-image">
+                <img src="img/bottle-of-wine-2.jpg" alt="" class="category-image__img">
+              </div>
             </div>
+            <div class="col-lg-2"></div>
           </div>
-          <div class="col-lg-2"></div>
         </div>
 			</nav>
 		</div>
@@ -247,69 +249,97 @@
       <div class="heading">
         <h3 class="heading__text">Produit en vedette</h3>
       </div>
-      <div class="owl-carousel slider-menu">
-        <div class="slider-menu__item">
-          <img src="img/green_coffee.jpg" alt="">
-          <div class="slider-menu__item-content">
-            <h3>Minot des Glaces</h3>
-            <h4>Cidrerie du Minot</h4>
-            <div class="rating">
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <span>(55)</span>
-            </div>
-            <div class="price"><span>22,95 CA$</span></div>
+      <div class="slider-wrap">
+        <div class="slider-naw-container">
+          <div class="slider-nav">
+            <div class="prev-slider-menu"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="next-slider-menu"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
           </div>
         </div>
-        <div class="slider-menu__item">
-          <img src="img/apple_pie.jpg" alt="">
-          <div class="slider-menu__item-content">
-            <h3>Tarte aux pommes</h3>
-            <h4>Pavillon de la pomme</h4>
-            <div class="rating">
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <span>(12)</span>
+        <div class="owl-carousel slider-menu">
+          <div class="slider-menu__item">
+            <a href="#" class="button">Ajouter au panier</a>
+            <div class="heart">
+              <img class="heart__img" src="img/icons/heart.png" alt="heart">
             </div>
-            <div class="price"><span>9,95 CA$</span></div>
+            <span class="overview">Aperçu rapide</span>
+            <img src="img/green_coffee.jpg" alt="">
+            <div class="slider-menu__item-content">
+              <h3>Minot des Glaces</h3>
+              <h4>Cidrerie du Minot</h4>
+              <div class="rating">
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(55)</span>
+              </div>
+              <div class="price"><span>22,95 CA$</span></div>
+            </div>
           </div>
-        </div>
-        <div class="slider-menu__item">
-          <img src="img/fish.jpg" alt="">
-          <div class="slider-menu__item-content">
-            <h3>Saumon sauvage</h3>
-            <h4>Poissonnerie Gaspez'y</h4>
-            <div class="rating">
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <span>(27)</span>
+          <div class="slider-menu__item">
+            <a href="#" class="button">Ajouter au panier</a>
+            <div class="heart">
+              <img class="heart__img" src="img/icons/heart.png" alt="heart">
             </div>
-            <div class="price"><span>8,00/100g CA$</span></div>
+            <span class="overview">Aperçu rapide</span>
+            <img src="img/apple_pie.jpg" alt="">
+            <div class="slider-menu__item-content">
+              <h3>Tarte aux pommes</h3>
+              <h4>Pavillon de la pomme</h4>
+              <div class="rating">
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(12)</span>
+              </div>
+              <div class="price"><span>9,95 CA$</span></div>
+            </div>
           </div>
-        </div>
-        <div class="slider-menu__item">
-          <img src="img/biscuit.jpg" alt="">
-          <div class="slider-menu__item-content">
-            <h3>Biscuits à l’avoine et miel</h3>
-            <h4>Pâtisserie Michaud</h4>
-            <div class="rating">
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <span>(103)</span>
+          <div class="slider-menu__item">
+            <a href="#" class="button">Ajouter au panier</a>
+            <div class="heart">
+              <img class="heart__img" src="img/icons/heart.png" alt="heart">
             </div>
-            <div class="price"><span>5,95/paquet de 6 CA$</span></div>
+            <span class="overview">Aperçu rapide</span>
+            <img src="img/fish.jpg" alt="">
+            <div class="slider-menu__item-content">
+              <h3>Saumon sauvage</h3>
+              <h4>Poissonnerie Gaspez'y</h4>
+              <div class="rating">
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(27)</span>
+              </div>
+              <div class="price"><span>8,00/100g CA$</span></div>
+            </div>
+          </div>
+          <div class="slider-menu__item">
+            <a href="#" class="button">Ajouter au panier</a>
+            <div class="heart">
+              <img class="heart__img" src="img/icons/heart.png" alt="heart">
+            </div>
+            <span class="overview">Aperçu rapide</span>
+            <img src="img/biscuit.jpg" alt="">
+            <div class="slider-menu__item-content">
+              <h3>Biscuits à l’avoine et miel</h3>
+              <h4>Pâtisserie Michaud</h4>
+              <div class="rating">
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star active"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(103)</span>
+              </div>
+              <div class="price"><span>5,95/paquet de 6 CA$</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -321,38 +351,46 @@
       <div class="heading">
         <h3 class="heading__text">parcourir par catégories</h3>
       </div>
-      <div class="categories-slider owl-carousel">
-        <div class="categories-slider__item">
-          <img src="img/drink.jpg" alt="drink">
-          <div class="categories-slider__name"><span>À boire</span></div>
+      <div class="slider-wrap">
+        <div class="slider-naw-container">
+          <div class="slider-nav">
+            <div class="prev-slider-products-categories"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="next-slider-products-categories"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+          </div>
         </div>
-        <div class="categories-slider__item">
-          <img src="img/fish.jpg" alt="fish">
-          <div class="categories-slider__name"><span>viande et poisson</span></div>
-        </div>
-        <div class="categories-slider__item">
-          <img src="img/eggs.jpg" alt="eggs">
-          <div class="categories-slider__name"><span>produits laitiers</span></div>
-        </div>
-        <div class="categories-slider__item">
-          <img src="img/bun.jpg" alt="bun">
-          <div class="categories-slider__name"><span>Boulangerie et pâtisserie</span></div>
-        </div>
-        <div class="categories-slider__item">
-          <img src="img/tomatoes.jpg" alt="tomatoes">
-          <div class="categories-slider__name"><span>fruits ET légumes</span></div>
-        </div>
-        <div class="categories-slider__item">
-          <img src="img/beans.jpg" alt="beans">
-          <div class="categories-slider__name"><span>épicerie</span></div>
-        </div>
-        <div class="categories-slider__item">
-          <img src="img/biscuit_2.jpg" alt="biscuit">
-          <div class="categories-slider__name"><span>sucreries</span></div>
-        </div>
-        <div class="categories-slider__item">
-          <img src="img/rack.jpg" alt="rack">
-          <div class="categories-slider__name"><span>cosmétiques</span></div>
+        <div class="categories-slider owl-carousel">
+          <div class="categories-slider__item">
+            <img src="img/drink.jpg" alt="drink">
+            <div class="categories-slider__name"><span>À boire</span></div>
+          </div>
+          <div class="categories-slider__item">
+            <img src="img/fish.jpg" alt="fish">
+            <div class="categories-slider__name"><span>viande et poisson</span></div>
+          </div>
+          <div class="categories-slider__item">
+            <img src="img/eggs.jpg" alt="eggs">
+            <div class="categories-slider__name"><span>produits laitiers</span></div>
+          </div>
+          <div class="categories-slider__item">
+            <img src="img/bun.jpg" alt="bun">
+            <div class="categories-slider__name"><span>Boulangerie et pâtisserie</span></div>
+          </div>
+          <div class="categories-slider__item">
+            <img src="img/tomatoes.jpg" alt="tomatoes">
+            <div class="categories-slider__name"><span>fruits ET légumes</span></div>
+          </div>
+          <div class="categories-slider__item">
+            <img src="img/beans.jpg" alt="beans">
+            <div class="categories-slider__name"><span>épicerie</span></div>
+          </div>
+          <div class="categories-slider__item">
+            <img src="img/biscuit_2.jpg" alt="biscuit">
+            <div class="categories-slider__name"><span>sucreries</span></div>
+          </div>
+          <div class="categories-slider__item">
+            <img src="img/rack.jpg" alt="rack">
+            <div class="categories-slider__name"><span>cosmétiques</span></div>
+          </div>
         </div>
       </div>
     </div>

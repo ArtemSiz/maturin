@@ -24,6 +24,13 @@ $(function() {
 		navText: ""
 	});
 
+	$(".next-slider-menu").click(function () {
+		owlSliderMenu.trigger('next.owl.carousel');
+	});
+	$(".prev-slider-menu").click(function () {
+		owlSliderMenu.trigger('prev.owl.carousel');
+	});
+
 	var owlSliderCategories= $(".categories-slider");
 	owlSliderCategories.owlCarousel({
 		loop: true,
@@ -32,6 +39,30 @@ $(function() {
 		nav: true,
 		navText: ""
 	});
+
+	$(".next-slider-products-categories").click(function () {
+		owlSliderCategories.trigger('next.owl.carousel');
+	});
+	$(".prev-slider-products-categories").click(function () {
+		owlSliderCategories.trigger('prev.owl.carousel');
+	});
+
+	var submenu = $(".nav-menu__submenu");
+	$(".open-submenu").mouseenter(function () {
+		submenu.css({display: 'block'})
+	});
+	submenu.mouseleave(function () {
+		submenu.css({display: 'none'})
+	});
+
+	var allDrinks = $(".all-alcoholic-drinks");
+	$(".open-all-alcoholic-drinks").mouseenter(function () {
+		allDrinks.css({display: 'block'})
+	});
+	allDrinks.mouseleave(function () {
+		allDrinks.css({display: 'none'})
+	});
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
