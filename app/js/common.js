@@ -1,5 +1,11 @@
 $(function() {
 
+	$("ul.sf-menu").superfish({
+		delay: 200,
+		speed: "fast",
+		cssArrows: false
+	});
+
 	var owl = $(".header-slider");
 	owl.owlCarousel({
 		loop: true,
@@ -47,21 +53,21 @@ $(function() {
 		owlSliderCategories.trigger('prev.owl.carousel');
 	});
 
-	var submenu = $(".nav-menu__submenu");
-	$(".open-submenu").mouseenter(function () {
-		submenu.css({display: 'block'})
-	});
-	submenu.mouseleave(function () {
-		submenu.css({display: 'none'})
-	});
+	// var submenu = $(".nav-menu__submenu");
+	// $(".open-submenu").mouseenter(function () {
+	// 	submenu.css({display: 'block'})
+	// });
+	// submenu.mouseleave(function () {
+	// 	submenu.css({display: 'none'})
+	// });
 
-	var allDrinks = $(".all-alcoholic-drinks");
-	$(".open-all-alcoholic-drinks").mouseenter(function () {
-		allDrinks.css({display: 'block'})
-	});
-	allDrinks.mouseleave(function () {
-		allDrinks.css({display: 'none'})
-	});
+	// var allDrinks = $(".all-alcoholic-drinks");
+	// $(".open-all-alcoholic-drinks").mouseenter(function () {
+	// 	allDrinks.css({display: 'block'})
+	// });
+	// allDrinks.mouseleave(function () {
+	// 	allDrinks.css({display: 'none'})
+	// });
 
 
 	//SVG Fallback
